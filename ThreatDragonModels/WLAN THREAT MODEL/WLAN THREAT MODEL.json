@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "3ed3c909-b8e5-483d-97f0-359ac95124ce",
             "zIndex": -1,
+            "id": "3ed3c909-b8e5-483d-97f0-359ac95124ce",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -68,6 +68,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -151,7 +152,6 @@
               ]
             },
             "id": "d9c6a66a-5912-419e-b712-c62fc0dec42e",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Client Devices\nActor",
@@ -185,6 +185,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -268,7 +269,6 @@
               ]
             },
             "id": "407d9ced-925c-4457-addb-86db8c66f2c5",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Router/ Ap\nProcess\n",
@@ -340,6 +340,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -423,7 +424,6 @@
               ]
             },
             "id": "7598abaa-0d7f-417c-8626-1da7d1fa449d",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Internet/ISP\nActor",
@@ -457,6 +457,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -540,7 +541,6 @@
               ]
             },
             "id": "752d5f38-eae3-4005-a818-442628e9d416",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Attacker\nActor",
@@ -574,6 +574,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -657,7 +658,6 @@
               ]
             },
             "id": "1766fc69-b370-4cfd-9d12-29de744064f0",
-            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
               "name": "Config and logs\nStore",
@@ -853,6 +853,52 @@
             "target": {
               "x": 559,
               "y": 300
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Rogue AP/Sniffing",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Rogue AP/Sniffing"
+            ],
+            "id": "7f8e743a-7674-465a-8b33-076d9f0057f3",
+            "source": {
+              "x": 136,
+              "y": 240
+            },
+            "target": {
+              "x": 236,
+              "y": 340
             }
           }
         ]
