@@ -834,58 +834,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Router to config/logs",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Router to config/logs"
-            ],
-            "id": "301abcea-5143-423c-a1fd-e1ee93d5c491",
-            "source": {
-              "x": 560,
-              "y": 150
-            },
-            "target": {
-              "x": 595,
-              "y": 330
-            },
-            "vertices": [
-              {
-                "x": 550,
-                "y": 250
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Rogue AP / sniffing",
               "description": "",
               "outOfScope": false,
@@ -910,6 +858,52 @@
             "target": {
               "cell": "d9c6a66a-5912-419e-b712-c62fc0dec42e",
               "port": "b3707ec5-a32a-4fc3-b332-e302411481e2"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Router to config/logs",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Router to config/logs"
+            ],
+            "id": "78fcf23e-4cce-4a64-92aa-d6f4efbefa57",
+            "source": {
+              "x": 550,
+              "y": 150
+            },
+            "target": {
+              "cell": "1766fc69-b370-4cfd-9d12-29de744064f0",
+              "port": "9eac9884-e41b-429c-8c85-9e3cac2e0b1c"
             }
           }
         ]
