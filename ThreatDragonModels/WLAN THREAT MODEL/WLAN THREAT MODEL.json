@@ -438,8 +438,8 @@
           },
           {
             "position": {
-              "x": 230,
-              "y": 300
+              "x": 210,
+              "y": 340
             },
             "size": {
               "width": 112.5,
@@ -746,52 +746,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Rogue AP / sniffing",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Rogue AP / sniffing"
-            ],
-            "id": "1781f1b0-279d-4c77-a0b0-90e9e29400dd",
-            "source": {
-              "x": 190,
-              "y": 150
-            },
-            "target": {
-              "cell": "752d5f38-eae3-4005-a818-442628e9d416",
-              "port": "9eac9884-e41b-429c-8c85-9e3cac2e0b1c"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -911,6 +865,52 @@
                 "y": 250
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Rogue AP / sniffing",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Rogue AP / sniffing"
+            ],
+            "id": "a8e2ce7f-9a4a-476e-89da-6527d30a223a",
+            "source": {
+              "cell": "752d5f38-eae3-4005-a818-442628e9d416",
+              "port": "9eac9884-e41b-429c-8c85-9e3cac2e0b1c"
+            },
+            "target": {
+              "cell": "d9c6a66a-5912-419e-b712-c62fc0dec42e",
+              "port": "b3707ec5-a32a-4fc3-b332-e302411481e2"
+            }
           }
         ]
       }
