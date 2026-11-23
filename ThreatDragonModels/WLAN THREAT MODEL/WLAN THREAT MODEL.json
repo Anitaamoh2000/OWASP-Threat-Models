@@ -283,39 +283,39 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "64ddff6e-ec21-4ad7-aaba-0f9209ab0419",
-                  "title": "Rogue AP",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                },
-                {
                   "id": "976633ef-ce1e-4b56-b40a-61793ce8b3aa",
                   "title": "Weak PSK or default admin password",
                   "status": "Open",
                   "severity": "High",
                   "type": "Elevation of privilege",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "An attacker within Wi-Fi range guesses or cracks a weak Wi-Fi passphrase, or logs in to the router with its unchanged default admin password. This lets the attacker join the network or take control of the router through brute-force or dictionary attacks.",
+                  "mitigation": "Use a long, unique passphrase (WPA3 or WPA2 with a strong PSK), change the default admin username and password, disable WPS, turn off remote administration, and keep the router firmware updated.\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "4b86b2aa-cea2-4a78-821a-f3832614a4df",
+                  "title": "Rogue AP",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -674,8 +674,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -696,31 +695,17 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "c47a33e9-aa32-4c87-b411-b6e67c9cf820",
-                  "title": "Deauthentication flood",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1
+                "denialOfService": 0
               }
             },
             "labels": [
@@ -737,7 +722,7 @@
             },
             "vertices": [
               {
-                "x": 770,
+                "x": 830,
                 "y": 110
               }
             ]
@@ -776,12 +761,12 @@
               "threats": [
                 {
                   "id": "68ee2395-e9d4-40de-984f-015e0ef0cd00",
-                  "title": "Sniffing",
+                  "title": "Deauthentication flood",
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "An attacker within range captures wireless traffic with a tool such as Wireshark in monitor mode. Data sent over open or weakly encrypted Wi-Fi can be read.",
+                  "mitigation": "Use WPA2/WPA3 with a strong passphrase, HTTPS/TLS everywhere, and a VPN on untrusted networks.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -791,7 +776,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -858,7 +843,13 @@
             "target": {
               "cell": "d9c6a66a-5912-419e-b712-c62fc0dec42e",
               "port": "b3707ec5-a32a-4fc3-b332-e302411481e2"
-            }
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 240
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -911,6 +902,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
