@@ -301,8 +301,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "An attacker within Wi-Fi range sets up a fake access point that copies the SSID of the real network, often with a stronger signal. Client devices that connect to it send their traffic through the attacker, who can intercept data, run a man-in-the-middle attack and steal credentials.",
+                  "mitigation": "Use WPA3 or WPA2-Enterprise with certificate validation, turn off auto-connect to open or unknown networks, use HTTPS/TLS and a VPN so intercepted traffic stays unreadable, and run wireless intrusion detection to spot rogue access points.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -310,12 +310,12 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 2
+                "elevationOfPrivilege": 3
               }
             }
           },
@@ -776,7 +776,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -797,7 +797,17 @@
                 "x": 450,
                 "y": 118
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
